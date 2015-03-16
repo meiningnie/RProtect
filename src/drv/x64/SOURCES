@@ -1,0 +1,13 @@
+TARGETNAME=RProtect
+TARGETPATH=OBJ
+TARGETTYPE=DRIVER
+SOURCES=RProtect.c 		\
+	Common.c		\
+	Hook.c			\
+	FakeSysCalls_SSDT.c	\
+	FakeSysCalls_Shadow.c	\
+	SysCallFlt_Pre.c	\
+	SysCallFlt_Post.c	\
+	EventHandler.c		\
+	WhiteBlackList.c
+AMD64_SOURCES = FkMs.asm

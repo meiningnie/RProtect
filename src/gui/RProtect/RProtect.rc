@@ -1,0 +1,127 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 228, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RProtect"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "作者：Fypher",IDC_STATIC,7,95,48,8
+    LTEXT           "http://hi.baidu.com/nmn714",IDC_STATIC,7,106,91,8
+    CONTROL         "开启进程监控",IDC_START_PROC_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,32,64,10
+    CONTROL         "开启代码文件访问监控",IDC_START_FILE_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,65,96,10
+    CONTROL         "开启注册表监控",IDC_START_REG_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,32,72,10
+    CONTROL         "开启系统监控",IDC_START_SYS_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,65,64,10
+    GROUPBOX        "监控设置",IDC_STATIC,7,7,214,87
+    LTEXT           "Email: neimeining@163.com",IDC_STATIC,71,95,89,8
+END
+
+IDD_EVENT DIALOGEX 0, 0, 202, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "违规进程：",IDC_STATIC,12,22,41,8
+    LTEXT           "受害者：",IDC_STATIC,12,56,33,8
+    EDITTEXT        IDC_CRIMINAL,12,39,177,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_VICTIM,12,70,180,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    GROUPBOX        "主动防御",IDC_STATIC,7,7,188,137
+    LTEXT           "行为说明：",IDC_STATIC,12,92,41,8
+    EDITTEXT        IDC_DETAIL,12,105,177,33,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER
+    PUSHBUTTON      "允许",IDC_ACCEPT,21,163,50,14
+    PUSHBUTTON      "阻止",IDC_REFUSE,129,163,50,14
+    CONTROL         "该进程均按此操作执行",IDC_ALWAYS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,148,96,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_EVENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
